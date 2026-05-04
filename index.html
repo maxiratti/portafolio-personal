@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Mi Portafolio Personal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<title>Maximiliano Ratti</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
 
-    <header>
-        <h1>Mi Portafolio</h1>
-    </header>
+<header class="header">
+    <h1>Maximiliano Ratti</h1>
 
     <nav>
-        <ul>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#tarjetas">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
+        <a href="index.html">Inicio</a>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#gustos">Gustos</a>
     </nav>
 
-    <main>
+    <button id="modoBtn">🌙</button>
+</header>
 
-        <!-- SECCIÓN SOBRE MÍ -->
-       
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-            <p>
-                Soy estudiante de la Tecnicatura Superior en Desarrollo de Software a distancia del IFTS N° 29, apasionado por el desarrollo web.
-                Me interesa aprender nuevas tecnologías y crear soluciones digitales.
-                Mi objetivo es convertirme en desarrollador full stack.
-            </p>
-            <img src="/img/MCR.png" alt="Imagen de perfil">
-        </section>
+<!-- PERFIL -->
+<section class="card perfil hidden" id="sobre">
+    <img src="img/Yo Cyborg.png" alt="Maxi">
+
+    <div>
+        <h2>Sobre mí</h2>
+        <p>
+            Profesor de computación en Tucumán y estudiante de Desarrollo de Software.
+            Apasionado por la tecnología, la educación y la robótica.
+        </p>
+        <p><strong>Edad:</strong> (completar)</p>
+        <p><strong>Ciudad:</strong> San Miguel de Tucumán</p>
+
+        <button onclick="saludo()">Saludar 👋</button>
+    </div>
+</section>
+
+<!-- HABILIDADES -->
+<section id="habilidades">
+    <h2 class="titulo hidden">Habilidades</h2>
+
+    <div class="grid">
+        <div class="card mini hidden">HTML</div>
+        <div class="card mini hidden">CSS</div>
+        <div class="card mini hidden">JavaScript</div>
+        <div class="card mini hidden">C# .NET</div>
+        <div class="card mini hidden">Arduino</div>
+        <div class="card mini hidden">React</div>
+    </div>
+</section>
+
 
         <!-- SECCIÓN TARJETAS -->
         
@@ -58,15 +76,18 @@
             </div>
         </section>
 
-        <!-- SECCIÓN HABILIDADES -->
+        <!-- HABILIDADES -->
         <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Aprendiendo React</li>
-            </ul>
+            <h2 class="titulo hidden">Habilidades</h2>
+
+            <div class="grid">
+                <div class="card mini hidden">HTML</div>
+                <div class="card mini hidden">CSS</div>
+                <div class="card mini hidden">JavaScript</div>
+                <div class="card mini hidden">C# .NET</div>
+                <div class="card mini hidden">Arduino</div>
+                <div class="card mini hidden">React</div>
+            </div>
         </section>
 
         <!-- SECCIÓN CONTACTO -->
