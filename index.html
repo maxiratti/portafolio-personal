@@ -1,87 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Maximiliano Ratti</title>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/movies.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
 
-<header class="header">
-    <h1>Maximiliano Ratti</h1>
+    <header class="header">
+        <h1>Maximiliano Ratti</h1>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="#sobre">Sobre mí</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#gustos">Gustos</a>
-    </nav>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#sobre">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#peliculas">Mis Películas</a>
+            <a href="#musica">Mi Música</a>
+            <a href="#contacto">Contacto</a>
+            <button id="modoBtn">🌙</button>
+        </nav>
 
-    <button id="modoBtn">🌙</button>
-</header>
+        
+    </header>
+    <main>
+        <!-- PERFIL -->
+        <section class="card perfil hidden" id="sobre">
+            <img src="img/Yo Cyborg.png" alt="Maxi">
 
-<!-- PERFIL -->
-<section class="card perfil hidden" id="sobre">
-    <img src="img/Yo Cyborg.png" alt="Maxi">
+            <div>
+                <h2>Sobre mí</h2>
+                <p>
+                    Profesor de computación en Tucumán y estudiante de Desarrollo de Software.
+                    Apasionado por la tecnología, la educación y la robótica.
+                </p>
+                <p><strong>Edad:</strong> 53</p>
+                <p><strong>Ciudad:</strong> San Miguel de Tucumán</p>
 
-    <div>
-        <h2>Sobre mí</h2>
-        <p>
-            Profesor de computación en Tucumán y estudiante de Desarrollo de Software.
-            Apasionado por la tecnología, la educación y la robótica.
-        </p>
-        <p><strong>Edad:</strong> (completar)</p>
-        <p><strong>Ciudad:</strong> San Miguel de Tucumán</p>
+                <button onclick="saludo()">Saludar 👋</button>
+            </div>
+        </section>
 
-        <button onclick="saludo()">Saludar 👋</button>
-    </div>
-</section>
+        <!-- HABILIDADES -->
+        <section id="habilidades">
+            <h2 class="titulo hidden">Habilidades</h2>
 
-<!-- HABILIDADES -->
-<section id="habilidades">
-    <h2 class="titulo hidden">Habilidades</h2>
+            <div class="grid">
+                <div class="card mini hidden">HTML</div>
+                <div class="card mini hidden">CSS</div>
+                <div class="card mini hidden">JavaScript</div>
+                <div class="card mini hidden">C# .NET</div>
+                <div class="card mini hidden">Arduino</div>
+                <div class="card mini hidden">React</div>
+            </div>
+        </section>
 
-    <div class="grid">
-        <div class="card mini hidden">HTML</div>
-        <div class="card mini hidden">CSS</div>
-        <div class="card mini hidden">JavaScript</div>
-        <div class="card mini hidden">C# .NET</div>
-        <div class="card mini hidden">Arduino</div>
-        <div class="card mini hidden">React</div>
-    </div>
-</section>
+        <!--PELÍCULAS FAVORITAS-->
+        <section id="peliculas">
+            <h2 class="titulo">🎬 Películas favoritas</h2>
 
-<!-- GUSTOS -->
-<section id="gustos">
-    <h2 class="titulo hidden">Mis gustos</h2>
+            <div class="movies-grid">
 
-    <div class="grid">
-        <div class="card hidden">
-            <h3>🎬 Películas</h3>
-            <ul>
-                <li>Interestelar</li>
-                <li>Matrix</li>
-                <li>El juego de la imitación</li>
-            </ul>
-        </div>
+                <div class="movie-card hidden">
+                    <img src="img/titanic2.jpg" alt="Titanic">
+                    <h3>Titanic</h3>
+                    <p>Titanic (1997) es una obra maestra del cine épico que fusiona magistralmente un romance prohibido con una de las tragedias más impactantes de la historia. Dirigida por James Cameron, la película destaca por un despliegue técnico sin precedentes, una química inolvidable entre Leonardo DiCaprio y Kate Winslet, y una banda sonora icónica que eleva su drama a una escala universal. Más que un filme de desastres, es una experiencia cinematográfica inmersiva que explora la lucha por la libertad personal frente a las barreras sociales, consolidándose como un clásico esencial que logra conmover profundamente a cualquier audiencia.</p>
+                </div>
 
-        <div class="card hidden">
-            <h3>🎵 Música</h3>
-            <ul>
-                <li>Daft Punk</li>
-                <li>AC/DC</li>
-                <li>Eminem</li>
-            </ul>
-        </div>
-    </div>
-</section>
+                <div class="movie-card hidden">
+                    <img src="img/matrix.webp" alt="Matrix">
+                    <h3>Matrix</h3>
+                    <p>Matrix (1999) es un hito revolucionario de la ciencia ficción que redefinió el cine de acción mediante una estética visual innovadora y un guion filosófico profundo. Dirigida por las hermanas Wachowski, la historia sigue a Neo, un hacker que descubre que la realidad es una simulación creada por máquinas para esclavizar a la humanidad, sumergiéndolo en una guerra cibernética cargada de dilemas sobre la libertad y la percepción. Gracias a su icónico "bullet time", efectos visuales vanguardistas y una atmósfera ciberpunk impecable, la película no solo marcó un antes y un después en la técnica cinematográfica, sino que también se consolidó como un referente cultural sobre la búsqueda de la verdad en un mundo controlado.</p>
+                </div>
 
-<!-- BOTÓN VOLVER ARRIBA -->
-<button id="topBtn">⬆</button>
+                <div class="movie-card hidden">
+                    <img src="img/cazafantasmas.jpg" alt="Los Cazafantasmas">
+                    <h3>Los Cazafantasmas</h3>
+                    <p>Cazafantasmas (1984) es una de las comedias sobrenaturales más icónicas de la historia, logrando un equilibrio perfecto entre humor irreverente, efectos especiales creativos y una atmósfera única en el Nueva York de los ochenta. Dirigida por Ivan Reitman y protagonizada por un elenco estelar liderado por Bill Murray, la trama sigue a un grupo de parapsicólogos expulsados de la universidad que deciden emprender un negocio peculiar para capturar espectros, enfrentándose finalmente a una amenaza apocalíptica que pone a prueba su valentía. Con su guion ingenioso, personajes memorables y un tema musical inolvidable, esta cinta se convirtió en un fenómeno cultural imbatible que definió el género de la comedia de aventuras y mantiene vigente su encanto nostálgico décadas después de su estreno.</p>
+                </div>
 
-<script src="js/script.js"></script>
+            </div>
+        </section>
+
+        <!-- MÚSICA FAVORITA -->
+        <section id="musica">
+            <h2 class="titulo hidden">🎵 Música favorita</h2>
+
+            <div class="music-grid">
+
+                <div class="music-card hidden">
+                    <img src="img/daftpunk.jpg" alt="Daft Punk">
+                    <h3>Daft Punk</h3>
+                    <p>Random Access Memories</p>
+                </div>
+
+                <div class="music-card hidden">
+                    <img src="img/acdc.jpg" alt="AC/DC">
+                    <h3>AC/DC</h3>
+                    <p>Back in Black</p>
+                </div>
+
+                <div class="music-card hidden">
+                    <img src="img/eminem.jpg" alt="Eminem">
+                    <h3>Eminem</h3>
+                    <p>The Eminem Show</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2 class="titulo hidden">📩 Contacto</h2>
+
+            <div class="contact-card hidden">
+                <form id="formContacto">
+
+                    <div class="input-group">
+                        <label>Nombre</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Apellido</label>
+                        <input type="text" id="apellido" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Teléfono</label>
+                        <input type="tel" id="telefono">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Mensaje</label>
+                        <textarea id="mensaje" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar mensaje</button>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <button id="topBtn">⬆</button>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

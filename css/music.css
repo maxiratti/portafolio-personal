@@ -1,0 +1,30 @@
+/* GRID MÚSICA */
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CARD MÚSICA */
+.music-card {
+    background: linear-gradient(135deg, #6366f1, #22c55e);
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* IMAGEN */
+.music-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* HOVER PRO */
+.music-card:hover {
+    transform: scale(1.05);
+}

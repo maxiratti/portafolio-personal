@@ -127,6 +127,15 @@ button:hover {
     font-size: 20px;
 }
 
+/* SOLUCIÓN NAVBAR + SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 170px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .perfil {

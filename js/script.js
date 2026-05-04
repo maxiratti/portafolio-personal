@@ -37,3 +37,21 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 hiddenElements.forEach(el => observer.observe(el));
+
+const form = document.getElementById("formContacto");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+
+    if(nombre === "" || email === "") {
+        alert("Por favor completá los campos obligatorios");
+        return;
+    }
+
+    alert("Mensaje enviado correctamente 🚀");
+
+    form.reset();
+});
