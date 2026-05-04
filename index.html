@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/movies.css">
     <link rel="stylesheet" href="css/music.css">
     <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
 
@@ -18,6 +19,7 @@
         <nav>
             <a href="index.html">Inicio</a>
             <a href="#sobre">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
             <a href="#habilidades">Habilidades</a>
             <a href="#peliculas">Mis Películas</a>
             <a href="#musica">Mi Música</a>
@@ -35,13 +37,43 @@
             <div>
                 <h2>Sobre mí</h2>
                 <p>
-                    Profesor de computación en Tucumán y estudiante de Desarrollo de Software.
+                    Profesor de computación en Tucumán y estudiante de la Tecnicatura Superior en Desarrollo de Software a Distancia en el IFTS N° 29.
                     Apasionado por la tecnología, la educación y la robótica.
                 </p>
                 <p><strong>Edad:</strong> 53</p>
                 <p><strong>Ciudad:</strong> San Miguel de Tucumán</p>
 
                 <button onclick="saludo()">Saludar 👋</button>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos">
+            <h2 class="titulo hidden">🚀 Proyectos</h2>
+
+            <div class="carousel hidden">
+
+                <button class="prev" onclick="moverSlide(-1)">❮</button>
+
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="slide">
+                        <img src="img/img1.jpg" alt="Proyecto 1">
+                        <h3>Proyecto Web</h3>
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/img2.jpg" alt="Proyecto 2">
+                        <h3>Sistema en C#</h3>
+                    </div>
+
+                    <div class="slide">
+                        <img src="img/img3.jpg" alt="Proyecto 3">
+                        <h3>Robótica Arduino</h3>
+                    </div>
+                </div>
+
+                <button class="next" onclick="moverSlide(1)">❯</button>
+
             </div>
         </section>
 
@@ -93,21 +125,21 @@
             <div class="music-grid">
 
                 <div class="music-card hidden">
-                    <img src="img/daftpunk.jpg" alt="Daft Punk">
-                    <h3>Daft Punk</h3>
-                    <p>Random Access Memories</p>
+                    <img src="img/depeche-mode1.jpg" alt="Depeche Mode">
+                    <h3>Depeche Mode</h3>
+                    <p>Violator</p>
                 </div>
 
                 <div class="music-card hidden">
-                    <img src="img/acdc.jpg" alt="AC/DC">
+                    <img src="img/ACDC_Back_in_Black.png" alt="AC/DC">
                     <h3>AC/DC</h3>
                     <p>Back in Black</p>
                 </div>
 
                 <div class="music-card hidden">
-                    <img src="img/eminem.jpg" alt="Eminem">
-                    <h3>Eminem</h3>
-                    <p>The Eminem Show</p>
+                    <img src="img/queen.jpg" alt="Queen">
+                    <h3>Queen</h3>
+                    <p>Bohemian Rhapsody</p>
                 </div>
 
             </div>
@@ -155,6 +187,31 @@
     </main>
     <!-- BOTÓN VOLVER ARRIBA -->
     <button id="topBtn">⬆</button>
+
+    <footer class="footer">
+            <div class="footer-container">
+
+                <h3>Maximiliano Ratti</h3>
+                <p>Portfolio Front End - Tecnicatura en Desarrollo de Software</p>
+
+                <div class="footer-links">
+                    <a href="#sobre">Sobre mí</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#peliculas">Películas</a>
+                    <a href="#musica">Música</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+
+                <div class="footer-social">
+                    <a href="#">🌐</a>
+                    <a href="#">💻</a>
+                    <a href="#">📧</a>
+                </div>
+
+                <p class="copy">© 2026 - Todos los derechos reservados</p>
+
+            </div>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

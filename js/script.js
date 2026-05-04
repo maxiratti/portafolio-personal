@@ -55,3 +55,23 @@ form.addEventListener("submit", function(e) {
 
     form.reset();
 });
+
+
+let indice = 0;
+
+function moverSlide(direccion) {
+    const track = document.getElementById("carouselTrack");
+    const totalSlides = track.children.length;
+
+    indice += direccion;
+
+    if (indice < 0) {
+        indice = totalSlides - 1;
+    }
+
+    if (indice >= totalSlides) {
+        indice = 0;
+    }
+
+    track.style.transform = `translateX(-${indice * 100}%)`;
+}
